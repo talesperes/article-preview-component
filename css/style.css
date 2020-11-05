@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+.content {
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Manrope';
+    margin-top: 12rem;
+    margin-left: 16rem;
+    margin-right: 16rem;
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    border-radius: 15px;
+    color: hsl(217, 19%, 35%);
+    font-weight: 500;
+}
+
+.card-image {
+    background-image: url('../images/drawers.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 300px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.card-text {
+    padding-top: 2.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+}
+
+.description {
+    font-size: 1rem;
+}
+
+.avatar-image {
+    border-radius: 50%;
+    width: 2.5rem;
+    margin-right: 1rem;
+}
+
+.date {
+    color: hsl(212, 23%, 69%);
+}
+
+.share-div {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: hsl(210, 46%, 95%);
+    text-align: center;
+    cursor: pointer;
+}
+
+.share-icon {
+    top: .2rem;
+    position: relative;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.author {
+    display: flex;
+    justify-content: space-between;
+}
+
+.author-date {
+    font-size: .8rem;
+    flex: auto;
+}
+
+.author-name {
+    font-weight: 700;
+}
+
+.checkbox-share {
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ div .tooltip-options {
+    visibility: visible;
+}
+
+.tooltip-options {
+    visibility: hidden;
+    width: fit-content;
+    background-color: hsl(217, 19%, 35%);
+    color: #fff;
+    text-align: center;
+    padding: 12px 35px;
+    border-radius: 10px;
+    top: 330px;
+    right: 220px;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip-options .options {
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    background-color: hsl(217, 19%, 35%);
+}
+
+.options:not([disabled]) {
+    cursor: pointer;
+}
+
+.tooltip-options::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+}
+
+/* .tooltip .tooltiptext {
+    visibility: hidden;
+    width: fit-content;
+    background-color: hsl(217, 19%, 35%);
+    color: #fff;
+    text-align: center;
+    padding: 12px 35px;
+    border-radius: 8px;
+    top: 355px;
+    right: 445px;
+    position: absolute;
+    z-index: 1;
+} */
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+@media screen and (max-width: 720px) {
+
+    .tooltip-options {
+        visibility: hidden;
+    }
+    
+    .content {
+        margin-top: 4rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    
+    .card {
+        flex-direction: column;
+        
+    }
+
+    .card-image {
+        border-radius: 15px 15px 0px 0px;
+        min-height: 200px;
+    }
+
+    .card-text {
+        padding-top: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .title {
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+
+    .share-icon-div {
+        right: 60px;
+    }
+
+    .description {
+        font-size: .8rem;
+    }
+
+}
