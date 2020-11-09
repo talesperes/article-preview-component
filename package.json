@@ -6,16 +6,24 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx http-server -a localhost -p 8000 -c-1",
-    "build": "babel js -d lib"
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "watch": "webpack serve"
   },
   "author": "Tales Peres",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.12.1",
     "@babel/core": "^7.12.3",
-    "@babel/preset-env": "^7.12.1"
+    "@babel/preset-env": "^7.12.1",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.5.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
   },
-  "dependencies": {
-
-  }
+  "dependencies": {}
 }
