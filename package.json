@@ -5,10 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx http-server -a localhost -p 8000 -c-1",
+    "start": "webpack serve",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "watch": "webpack serve"
   },
   "author": "Tales Peres",
   "license": "ISC",
