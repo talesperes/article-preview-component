@@ -8,7 +8,7 @@ module.exports = {
         filename: 'main.js'
     },
     devServer: {
-        contentBase: path.join(__dirname, "./build/"),
+        contentBase: path.join(__dirname, "./src"),
         watchContentBase: true,
         port: 9001
     },
